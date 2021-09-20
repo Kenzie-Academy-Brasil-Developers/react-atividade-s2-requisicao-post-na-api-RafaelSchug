@@ -1,7 +1,7 @@
 import {Container} from './style';
 
-export const Display = () => {
+export const Display = ({status}) => {
     return (
-        <Container>Display</Container>
+        <Container>{status}</Container>
     )
 }
