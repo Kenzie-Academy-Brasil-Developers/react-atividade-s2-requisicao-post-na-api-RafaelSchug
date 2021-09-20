@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Login setStatus={setStatus}/>
-      <Display status={status}/>
+      <Display status={status} setStatus={setStatus}/>
     </div>
   );
 }

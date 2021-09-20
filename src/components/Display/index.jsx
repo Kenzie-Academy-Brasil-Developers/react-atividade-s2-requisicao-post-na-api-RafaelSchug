@@ -1,7 +1,10 @@
 import {Container} from './style';
 
-export const Display = ({status}) => {
+export const Display = ({status, setStatus}) => {
+
     return (
-        <Container>{status}</Container>
+        <Container bgColor={status.color}>
+            {status && <span>{status.msg}</span>}
+        </Container>
     )
 }
